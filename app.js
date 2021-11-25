@@ -1,5 +1,7 @@
-//UI object
+//UI and LS object
 const ui = new UI();
+const ls = new LS();
+
 // event elements
 const form = document.querySelector('form');
 
@@ -21,6 +23,8 @@ function addBook(event){
     console.log(book)
     ui.addBook(book);
     console.log(ui)
+    //addBook to LS
+    ls.addBook(book)
 
     //addBookToLocalStorage(book);
     titleInput.value = '';
